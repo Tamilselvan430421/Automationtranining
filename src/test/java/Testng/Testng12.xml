@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNG grouping suite">
+    <test name="Grouping test">
+
+        <!-- run this testcase as group -->
+
+        <groups>
+            <run>
+                <include name="loginpage"/>
+<!--                <include name="Homepage"/>-->
+
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.groupingsample"/>
+
+        </classes>
+    </test>
+</suite>
